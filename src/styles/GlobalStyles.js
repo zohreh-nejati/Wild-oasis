@@ -1,19 +1,6 @@
-/*
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600&display=swap"
-  rel="stylesheet"
-/>
-*/
+import { createGlobalStyle } from "styled-components";
 
-/* Colors adapted from https://tailwindcss.com/docs/customizing-colors */
-
-:root {
+export const GlobalStyles = createGlobalStyle`:root {
   /* Indigo */
   --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
@@ -67,6 +54,41 @@
   --image-grayscale: 0;
   --image-opacity: 100%;
 }
+@font-face {
+  font-family: "iransans";
+  src: url("public/IranSans/iransansFamily/IRANSansX-ExtraBold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("public/IranSans/iransansFamily/IRANSansX-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("public/IranSans/iransansFamily/IRANSansX-Bold.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("public/IranSans/iransansFamily/IRANSansX-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("public/IranSans/iransansFamily/IRANSansX-Regular.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("public/IranSans/iransansFamily/IRANSansX-Light.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("public/IranSans/iransansFamily/IRANSansX-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
 
 *,
 *::before,
@@ -84,7 +106,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "iransans", sans-serif;
   color: var(--color-grey-700);
 
   transition: color 0.3s, background-color 0.3s;
@@ -123,7 +145,7 @@ select:focus {
   outline-offset: -1px;
 }
 
-/* Parent selector, finally 😃 */
+/* Parent selector, finally */
 button:has(svg) {
   line-height: 0;
 }
@@ -194,3 +216,4 @@ FOR DARK MODE
 --image-grayscale: 10%;
 --image-opacity: 90%;
 */
+`;
