@@ -4,16 +4,16 @@ import Row from "../ui/Row";
 function Account() {
   return (
     <>
-      <Heading as="h1">Update your account</Heading>
+      <Heading as="h1">بروزرسانی حساب کاربری</Heading>
 
-      <Row>
-        <Heading as="h3">Update user data</Heading>
-        <p>Update user data form</p>
+      <Row type="vertical">
+        <Heading as="h3">به‌روزرسانی داده‌های کاربر</Heading>
+        <p>به روز رسانی فرم اطلاعات کاربر</p>
       </Row>
 
-      <Row>
-        <Heading as="h3">Update password</Heading>
-        <p>Update user password form</p>
+      <Row type="vertical">
+        <Heading as="h3">رمز عبور را به روز کنید</Heading>
+        <p>به روز رسانی فرم رمز عبور کاربر</p>
       </Row>
     </>
   );
