@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 const Heading = styled.h1`
+  text-align: right;
   ${(props) =>
     props.as === "h1" &&
     css`
