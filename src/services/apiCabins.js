@@ -9,11 +9,23 @@ export async function getCabins() {
   }
   return data;
 }
+export async function createCabinRow(newCabin) {
+  const { data, error } = await supabase
+    .from("cabins")
+    .insert([newCabin])
+    .select();
+  if (error) {
+    console.log(error);
+    throw new Error("امکان افزودن کلبه وجود ندارد");
+  }
+  return data;
+}
 
 export async function deleteCabin(id) {
   const { data, error } = await supabase.from("cabins").delete().eq("id", id);
   if (error) {
     console.log(error);
-    throw new Error("امکان حذف کلبه وجود نداشت");
+    throw new Error("امکان حذف کلبه وجود ندارد");
   }
+  return data;
 }
