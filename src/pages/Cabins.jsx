@@ -11,7 +11,7 @@ function Cabins() {
     <>
       <Row type="horizontal">
         <Heading as="h1">همه کلبه‌ها</Heading>
-        <span> فیلتر کردن/مرتب کردن</span>
+        <span> فیلتر کردن / مرتب کردن</span>
       </Row>
       <Row>
         <CabinTable />

@@ -41,6 +41,7 @@ function CabinTable() {
   });
 
   if (isLoading) return <Spinner />;
+
   return (
     <Table role="table">
       <TableHeader role="row">
